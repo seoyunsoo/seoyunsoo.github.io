@@ -35,8 +35,8 @@ $('form').submit(function (e) {
 
     // Send the message to the server
     socket.emit('message', {
-    user: cookie.get('user') || 'Anonymous',
-    message: message
+        user: cookie.get('user') || 'Anonymous',
+        message: message
     });
 
     // Clear the input and focus it for a new message
